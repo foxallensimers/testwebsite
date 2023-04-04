@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from '../../assets/logo.png'
 
 const Footer = () => {
   return (
@@ -6,9 +7,9 @@ const Footer = () => {
       <div className="container">
         <div className="flex justify-center items-center border-b border-gray-300 pb-6">
           <img
-            src="http://www.themezaa.com/html/leadgen/demo/restaurant/images/logo.png"
+            src={Logo.src}
             alt="Logo"
-            className="w-[297px] object-contain h-[35px]"
+            className="w-[297px] object-contain"
           />
         </div>
         <div className="flex justify-between items-center mt-6">
@@ -18,7 +19,7 @@ const Footer = () => {
           <a className="text-textColor font-light" href="#">Legal</a>
           </div>
           <p className="text-textColor font-light">
-          © 2023 LeadGen is proudly powered by Matt.
+          © 2023 Sunbeam is proudly powered by Matt.
           </p>
         </div>
       </div>

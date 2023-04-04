@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section data-aos="fade-right" id="Home">
       <Header />
-      <div className="flex justify-center items-center min-h-screen">
+      <div className="flex justify-start items-center min-h-screen">
         <Hero />
       </div>
     </section>

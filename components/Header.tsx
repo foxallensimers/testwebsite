@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import Logo from '../assets/logo.png'
 
-
-// const navItems = ["Home", "About", "SERVICES", "MENU", "GALLERY", "CHEFS", "BLOG", "CONTACT"];
-const navItems : string[] = [];
+const navItems = ["Home", "About", "SERVICES", "MENU", "GALLERY", "CHEFS", "BLOG", "CONTACT"];
+// const navItems : string[] = [];
 
 const Header = () => {
 
@@ -23,14 +23,14 @@ const Header = () => {
   })
 
   return (
-    <header  className={`border-b z-[10000] border-gray-400 border-opacity-20 sticky top-0 ${navbar && `bg-black transition-all duration-300 ease-out`}`}>
+    <header  className={`border-b z-[10000] border-gray-400 border-opacity-20 sticky top-0 ${navbar ? `bg-darkColor bg-opacity-100 transition-all duration-300 ease-out` : `bg-darkColor bg-opacity-70`}`}>
       <div className="container">
         <div className={`flex justify-between items-center transition-all duration-300 ease-out ${navbar ? `py-4` : `py-6`}`}>
-          <img src="http://www.themezaa.com/html/leadgen/demo/restaurant/images/logo-white.png" alt="Logo" className='w-[297px] object-contain h-[35px]' />
+          <img src={Logo.src} alt="Logo" className='w-[297px] object-contain h-[50px]' />
           <ul className="flex gap-x-6 items-center">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a className='text-white font-light uppercase text-[12px]' href="#">{item}</a>
+                <a className={`${navbar ? `text-black`: `text-white`} font-light uppercase text-[14px] tracking-widest transition-all duration-300 ease-out `} href="#">{item}</a>
               </li>
             ))}
             {/* <button className='px-4 py-1 bg-primary text-white rounded-md transition-all duration-300 ease-out hover:bg-opacity-50'>

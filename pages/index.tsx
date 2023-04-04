@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import useMeasure from "react-use-measure";
 import { useTrail, animated } from "@react-spring/web";
 import Footer from "@/components/sections/Footer";
+import Meta from "@/components/Meta";
 
 export default function Home() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function Home() {
 
   return (
     <>
+      <Meta title="Sunbeam Landing Page" />
       <HomeSection />
       <AboutSection />
       <ServiceSection />

@@ -1,18 +1,38 @@
-import React from 'react'
+import React from "react";
 
 const Hero = () => {
-    return (
-        <div  data-aos="fade-up"
-        data-aos-duration="3000" className='flex justify-center items-center bg-[#33333344] shadow-xl p-4 max-w-[550px] mx-auto rounded-md'>
-            <div className="border-4 border-white border-opacity-40 p-6 flex flex-col justify-center items-center">
-                <h1 className='text-white text-5xl font-bold text-center'>DELICIOUS BREAKFAST</h1>
-                <p className='text-white mt-2 mb-4 text-center'>
-                    Lorem Ipsum is simply dummy text of printing and industry. Lorem Ipsum the industry's dummy text.
-                </p>
-                <button className='text-white border border-white text-[12px] px-4 py-2 rounded-md transition-all duration-300 ease-out hover:bg-[#d0ae5e] hover:border-opacity-0'>DISCOVER MENU</button>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="container">
+      <div
+        // data-aos="fade-up"
+        // data-aos-duration="1000"
+        className="flex flex-col justify-start items-start  max-w-[550px] "
+      >
+        <h1 data-aos="slide-right" className="text-primary leading-[70px] text-7xl font-bold  tracking-widest  ">
+          Sunbeam
+        </h1>
+        <h1 data-aos="fade-up" data-aos-delay="1000"  className="text-white leading-[70px] text-7xl font-bold  tracking-widest  ">
+          Marketing
+        </h1>
+        <h1 data-aos="fade-down" data-aos-delay="2000" className="text-secondary leading-[70px] text-7xl font-bold  tracking-widest  ">
+          Soluations
+        </h1>
 
-export default Hero
+        <p
+         data-aos="fade-down" data-aos-delay="3200"
+          className="text-white mt-2 mb-4 text-center tracking-[4px]"
+        >
+          Creating Enthusiasts. Accelerating Growth.
+        </p>
+        <button
+          data-aos="fade-down" data-aos-delay="400"
+          className="text-white border border-white text-[16px] tracking-widest px-4 py-2 rounded-md transition-all duration-300 ease-out hover:bg-primary hover:border-opacity-0"
+        >
+          Contact Us
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

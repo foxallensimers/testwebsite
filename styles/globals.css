@@ -8,29 +8,43 @@
     scroll-behavior:  smooth;
 }
 
+@font-face {
+    font-family: FormaDJRBanner;
+    src: url("../public/FormaDJRBanner-Regular-Testing.woff");
+  }
+
 h1,h2,h3,h4,h5,h6,a,span,p,button{
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: FormaDJRBanner !important;
+    word-spacing: 2px;
 }
 
 #Home{
-    background: linear-gradient(rgba(15,15,15,0.3), rgba(15,15,15,0.3)), url("http://www.themezaa.com/html/leadgen/demo/restaurant/images/bg-image/agency-slider-04.jpg");
+    background: linear-gradient(rgba(15, 15, 15, 0.519), rgba(15, 15, 15, 0.884)), url("http://agencyco.themetags.com/img/hero-bg-1.jpg");
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    backdrop-filter: blur(10%);
     position: relative;
     min-height: 100vh;
     width: 100%;
 }
-#menu{
-    background: linear-gradient(rgba(0, 0, 0, 0.00784314), rgba(0, 0, 0, 0.00784314)), url("http://www.themezaa.com/html/leadgen/demo/restaurant/images/bg-image/restaurant-menu-bg.jpg");
+/* #menu{
+    background: linear-gradient(rgba(0, 0, 0, 0.108), rgba(0, 0, 0, 0.063)), url("");
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-}
+} */
 
 
 @layer components{
     .container{
         @apply !max-w-screen-xl mx-auto px-4
     }
+    .header_space{
+        @apply tracking-[4px]
+    }
+    .text_space{
+        @apply tracking-[1px]
+    }
+    
 }
