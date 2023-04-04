@@ -14,6 +14,7 @@ import useMeasure from "react-use-measure";
 import { useTrail, animated } from "@react-spring/web";
 import Footer from "@/components/sections/Footer";
 import Meta from "@/components/Meta";
+import ContactUs from "@/components/sections/ContactUs";
 
 export default function Home() {
   useEffect(() => {
@@ -32,6 +33,7 @@ export default function Home() {
       <ServiceSection />
       <MenuSection />
       <FoodSection />
+      <ContactUs/>
       <Footer />
     </>
   );
